@@ -1,4 +1,5 @@
 {
+  "licenser.author": "Rehan Kodekar",
   "files.exclude": {
     "node_modules": "explorerExcludedFiles",
     "secret.js": "explorerExcludedFiles"
