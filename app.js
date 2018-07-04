@@ -3,6 +3,7 @@ const yargs = require("yargs");
 const geocode = require("./geocode/geocode");
 const forecast = require("./forecast/forecast");
 
+
 const argv = yargs
   .options({
     a: {
@@ -34,5 +35,3 @@ geocode.geoCodeAddress(argv.address, (error, result) => {
     );
   }
 });
-
-// f8549c0052c34f7dc1ac1421720d294e

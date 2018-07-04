@@ -1,9 +1,10 @@
 const request = require("request");
+const constants = require('../secret');
 
 getForeCast = (requestData, callback) => {
   request.get(
     {
-      url: `https://api.darksky.net/forecast/f8549c0052c34f7dc1ac1421720d294e/${
+      url: `https://api.darksky.net/forecast/${constants.api}/${
         requestData.lat
         }, ${requestData.long}`,
       json: true
